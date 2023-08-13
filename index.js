@@ -11,8 +11,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/messages', async (req, res) => {
-    const messages = await db.getAllMsg()
-    res.status(200).json({ messages })
+    try {
+        const messages = await db.getAllMsg()
+        res.status(200).json({ messages })
+    } catch(err) { console.log(err) }
 })
 
 app.post('/messages', async (req, res) => {
