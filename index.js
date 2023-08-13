@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require("cors")
 const app = express()
-const db = require('./db/messages.js')
+const db = require('./messages.js')
 const PORT = process.env.PORT || 4000
 
 app.use(cors())
