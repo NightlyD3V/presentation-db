@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const db = require('./db/messages')
+const db = require('./db/messages.js')
 
 app.get('/', (req, res) => {
     res.send("It's working!")
