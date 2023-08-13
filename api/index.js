@@ -16,5 +16,8 @@ app.post('/messages', async (req, res) => {
     const result = await db.createMsg(req.body)
     res.status(200).json({id: result[0]})
 })
+app.listen(PORT, () =>{
+    console.log(`App is listening on ${PORT}`)
+})
 
 module.exports = app
