@@ -1,4 +1,4 @@
-const knex = require('./knex')
+const knex = require('knex')(require('./knex').development)
 
 function createMsg(message){
     return knex('Messages'.insert(message))
