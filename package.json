@@ -4,6 +4,7 @@
   "description": "SQLITE3 Backend",
   "main": "index.js",
   "scripts": {
+    "run": "node ./api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tyler Spaulding",
